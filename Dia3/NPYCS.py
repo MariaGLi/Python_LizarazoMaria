@@ -39,7 +39,7 @@ while sel!=3:  # hacemos un while para hacer un bucle a nuestras tres opciones
     if sel==2: #si la seleccion del usuario es dos, nos dirigira a crear la clave segura
         import random # se importa la variable random, para que esta nos ayude a mezclar todos los caracteres
         def generarcontraseña(longitud): #Se crea la variable generarcontraseña con longitud infinita
-            caracteres = "1234567890abcdefghijklmnñopqrstuvwxyz°!#$)%(&/\=?¡¿-_;}.,+{*"  #se crea la variable caracteres
+            caracteres = "1234567890abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ°!#$)%(&/\=?¡¿-_;}.,+{*"  #se crea la variable caracteres
             contraseña = "" #se crea la variable contraseña, que es la que nos va a sevir paa almacenar los datos
             for i in range(longitud): # se crea un for, con el fin e que este se repita las veces que el usuario indique en el tamaño de la contraseña
                 contraseña += random.choice(caracteres) # la variable caracteres actuara de la mano con la variable random para asi, darnos la clave con la longitud de los caracteres solicitada po el usuario
