@@ -77,6 +77,5 @@ while opc!=2:
 
     else: 
         print("el programa ha terminado")
-        input("Para continuar presiona enter.") 
 
         
