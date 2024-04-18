@@ -21,6 +21,12 @@ while sel!=4:  # hacemos un while para hacer un bucle a nuestras tres opciones
         Us=input("Ingrese el usuario")
         if Us in Usuario:
             print("Usuario correcto.")
+
+            Con=input("Ingrese su contraseña")
+            if Con in Contraseña:
+                print("Contraseña correcto.")
+            else:
+                print("Contraseña incorrecta, verifique nuevamente.")
         else:
             print("No tienes credencial, compra una.")
         input("Para continuar presione enter.")
@@ -28,7 +34,8 @@ while sel!=4:  # hacemos un while para hacer un bucle a nuestras tres opciones
     if sel == 2:
         Usu = input("Agrega el usuario")
         Usuario.append(Usu)
-        
+        Contra=input("Que contraseña desea agg a su usuario")
+        Contraseña.append(Contra)
 
 
     #if sel == 3:
